@@ -1,0 +1,22 @@
+.socials {
+    margin-top: 12px;
+    height: 3em;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials a {
+    height: 2.1rem;
+    width: 2.1rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials a:hover {
+    border: 2px solid #3282B8;
+}
