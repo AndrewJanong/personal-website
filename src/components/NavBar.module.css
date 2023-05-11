@@ -29,7 +29,7 @@
 }
 
 .nav-links > li {
-    font-size: 1.2em;
+    font-size: 0.6em;
     font-weight: bold;
     color: #fff;
     height: 100%;
@@ -41,7 +41,7 @@
 }
 
 .nav-links > li:hover {
-    font-size: 1.2em;
+    font-size: 0.6em;
     font-weight: bold;
     color: #3282B8;
     height: 100%;

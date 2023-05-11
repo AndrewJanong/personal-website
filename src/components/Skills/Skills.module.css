@@ -1,0 +1,21 @@
+.skills {
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    padding: 4.8rem;
+    background-color: #1B262C;
+    color: white;
+}
+
+.skills h1 {
+    font-weight: bolder;
+    font-size: 3rem;
+    margin-bottom: 48px;
+}
+
+.container {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}

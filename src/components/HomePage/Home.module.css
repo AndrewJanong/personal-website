@@ -3,11 +3,12 @@
     box-sizing: border-box;
     width: 100%;
     height: 100vh;
-    background-color: transparent;
+    background-color: #1B262C;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .container {
@@ -18,6 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .container > h1 {
@@ -29,4 +31,5 @@
 
 .container p {
     font-size: 1.6em;
+    overflow: hidden;
 }
