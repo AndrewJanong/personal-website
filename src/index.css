@@ -8,9 +8,14 @@
 
 html {
   font-family: "Montserrat", sans-serif;
-  background: #1B262C;
+  background: #0B2447;
 }
 
 body {
   margin: 0;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }

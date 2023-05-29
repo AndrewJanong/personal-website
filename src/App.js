@@ -1,19 +1,19 @@
 import React from "react";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar/NavBar";
 import Home from "./components/HomePage/Home";
 import About from "./components/AboutMe/About";
 import Skills from "./components/Skills/Skills";
-import Idk from "./components/Idk";
+import Projects from "./components/MyProjects/Projects";
 
 function App() {
   return (
-    <div>
+    <div className="app">
       <NavBar />
       <div style={{position: "relative"}}>
         <Home />
         <About />
         <Skills />
-        <Idk />
+        <Projects />
       </div>
     </div>
   );

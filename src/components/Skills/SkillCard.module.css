@@ -1,14 +1,18 @@
 .card {
-    width: 30%;
-    height: 100%;
-    padding-top: 16px;
+    width: 360px;
+    height: 400px;
+    padding: 28px;
     background-color: rgb(21, 20, 20);
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    overflow: auto;
     border-radius: 5%;
 }
+
+.card::-webkit-scrollbar {
+    display: none;
+  }
 
 ul {
     text-align: center;
@@ -32,12 +36,16 @@ li {
 }
 
 .text h1 {
-    font-size: 2em;
+    font-size: 24px;
     margin: 0.8rem auto;
 }
 
 .icon {
     width: 1em;
+}
+
+li p {
+    font-size: 16px;
 }
 
 li img {
@@ -49,5 +57,5 @@ li img {
 }
 
 .card > img {
-    width: 6em;
+    width: 80px;
 }

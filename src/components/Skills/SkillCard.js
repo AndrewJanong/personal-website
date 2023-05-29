@@ -12,7 +12,7 @@ const SkillCard = (props) => {
                     {props.skills.map((skill) => {
                         const img = './Icons/' + skill + '.png';
                         return (
-                            <li>{skill}  <span><img src={require(`${img}`)} alt="No Image Found" className={styles.icon}/></span> </li>       
+                            <li><p>{skill}</p>  <span><img src={require(`${img}`)} alt="No Image Found" className={styles.icon}/></span> </li>       
                         )
                     })}
                 </ul>

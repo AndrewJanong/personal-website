@@ -6,7 +6,7 @@ const Skills = () => {
     const languages = ['Java', 'C++', 'Python', 'JavaScript', 'HTML', 'CSS'];
     const frameworks = ['React.js', 'jQuery', 'Node.js', 'Express.js', 'MongoDB', 'Bootstrap']
     return (
-        <div className={styles.skills}>
+        <div className={styles.skills} id="skills">
             <h1>My Skills</h1>
             <div className={styles.container}>
                 <SkillCard field={'Languages'} skills={languages} img={'code'}/>
