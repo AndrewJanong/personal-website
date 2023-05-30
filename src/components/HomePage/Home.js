@@ -7,7 +7,7 @@ const Home = (props) => {
     return (
         <div className={styles.home} id="home">
             <div className={styles.container}>
-                <h1><TypedStyle /></h1>
+                <TypedStyle />
                 <p>Full-time student with a passion in </p>
                 <p>Computer Science and Math</p>
                 <Socials />

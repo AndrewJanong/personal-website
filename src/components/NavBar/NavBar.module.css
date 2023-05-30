@@ -13,7 +13,7 @@
 
 #fullName {
     font-weight: bolder;
-    font-size: 1.6em;
+    font-size: 24px;
     color: white;
 }
 
@@ -54,4 +54,81 @@
     width: 100%;
     color: inherit;
     text-decoration: none;
+}
+
+.sidebar {display: none;}
+
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .sidebar {
+        display: inline;
+    }
+
+    .sidebarIcon {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+    }
+
+    .sidebarIcon:hover {
+        opacity: 50%;
+    }
+
+    .sidebarIconHide {
+        display: none;
+    }
+
+    .sidebar img {
+        display: block;
+        width: 24px;
+        height: 24px;
+        
+    }
+
+    .sidebarLinks {
+        position: fixed;
+        right: 0;
+        top: 0;
+        color: #fff;
+        width: 0;
+        height: 100%;
+        background-color: #071a33;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+    }
+
+    .sidebarLinksOpen {
+        position: fixed;
+        right: 0;
+        top: 0;
+        color: #fff;
+        width: 40%;
+        height: 100%;
+        background-color: #071a33;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        transition: 0.5s;
+    }
+
+    .sidebarLinks li, .sidebarLinksOpen li {
+        width: 100%;
+        height: 56px;
+        border-bottom: 1px solid #0B2447;
+    }
+
+    .sidebarLinks li:hover, .sidebarLinksOpen li:hover {
+        background-color: #0a2140;
+    }
 }

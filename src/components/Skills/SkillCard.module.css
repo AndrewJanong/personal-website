@@ -10,6 +10,12 @@
     border-radius: 5%;
 }
 
+@media only screen and (max-width: 900px) {
+    .card {
+        width: 280px;
+    }
+}
+
 .card::-webkit-scrollbar {
     display: none;
   }

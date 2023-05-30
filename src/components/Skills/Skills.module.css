@@ -1,14 +1,4 @@
-@media (min-width:480px) and (max-width: 900px) {
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .container > * {
-        margin-bottom: 24px;
-    }
-}
 
 .skills {
     width: 100%;
@@ -29,4 +19,23 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+@media only screen and (max-width: 900px) {
+    .skills h1 {
+        font-weight: bolder;
+        font-size: 36px;
+        margin-bottom: 48px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container > * {
+        margin-bottom: 24px;
+        width: 80%;
+    }
 }
