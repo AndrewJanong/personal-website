@@ -1,0 +1,34 @@
+.icon-card {
+    width: 4.5rem;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4px 0;
+}
+
+.icon-card {
+    /* Your existing styles for icon-card */
+    position: relative;
+    overflow: visible; /* Ensure that the hidden <p> doesn't overflow */
+}
+
+.name {
+    /* Your existing styles for name */
+    color: var(--very-bright-blue);
+    cursor: default;
+    position: absolute;
+    bottom: 0;
+    opacity: 0; /* Initially set opacity to 0 to hide the <p> element */
+    transition: opacity 0.3s ease; /* Apply transition to the opacity property */
+}
+
+.name-visible {
+    opacity: 0.9; /* Set opacity to 1 to make the <p> element visible */
+    color: var(--very-bright-blue);
+}
+
+
+
+
+

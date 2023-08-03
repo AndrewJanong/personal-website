@@ -21,6 +21,7 @@ function TypedStyle() {
 
   return (
     <div className="App" style={{color: '#576CBC'}}>
+      {/* <p style={{color: 'white'}}>Hi, I am a <span style={{color: '#576CBC'}} ref={el} /> </p> */}
       <p style={{color: 'white'}}>Hi, I am a <span style={{color: '#576CBC'}} ref={el} /> </p>
     </div>
   );

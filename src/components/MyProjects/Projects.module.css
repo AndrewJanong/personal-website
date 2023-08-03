@@ -1,16 +1,17 @@
 .projects {
     width: 100%;
-    background-color: transparent;
-    color: #fff;
-    padding: 72px;
-    padding-top: 100px;
-    overflow: hidden;
+    background-color: #000;
+    position: relative;
+    padding: 6rem 8rem;
+    color: white;
 }
 
-.projects > h1 {
-    font-weight: bolder;
-    font-size: 64px;
-    margin-bottom: 48px;
+.header {
+    margin-bottom: 4rem;
+}
+
+.header h1 {
+    color: var(--very-bright-blue);
 }
 
 .container {
@@ -18,11 +19,9 @@
 }
 
 
-@media only screen and (max-width: 900px) {
+
+@media only screen and (max-width: 576px) {
     .projects {
-        padding: 24px;
-    }
-    .projects > h1 {
-        font-size: 36px;
+        padding: 6rem 2rem;
     }
 }

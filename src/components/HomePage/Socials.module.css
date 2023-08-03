@@ -15,8 +15,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: border .3s ease;
 }
 
 .socials a:hover {
-    border: 2px solid #3282B8;
+    border: 2px solid var(--very-bright-blue);
+}
+
+.socials-icon {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color .3s ease;
+}
+
+.icon-hovered {
+    color: var(--very-bright-blue);
 }

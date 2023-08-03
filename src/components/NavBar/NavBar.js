@@ -21,28 +21,30 @@ const NavBar = (props) => {
 
     return (
         <div className={styles.navbar}>
-            <div className={styles.title} onClick={() => alert('asda')}>
-                <p id={styles.fullName}>Andrew <span style={{color: '#576CBC'}}>Janong</span></p>
+            <div className={styles.title}>
+                <Link to='home' smooth={true} duration={1500}>
+                    <p id={styles.fullName}>Andrew <span style={{color: '#576CBC'}}>Janong</span></p>
+                </Link> 
             </div>
             <ul className={`${styles["nav-links"]}`}>
                 <li>
-                    <Link to='home' smooth={true} duration={500}>
-                        Home
-                    </Link>    
-                </li>
-                <li>
-                    <Link to='about' smooth={true} duration={500}>
+                    <Link to='about' smooth={true} duration={1500}>
                         About
                     </Link>    
                 </li>
                 <li>
-                    <Link to='skills' smooth={true} duration={500}>
+                    <Link to='skills' smooth={true} duration={1500}>
                         Skills
                     </Link>    
                 </li>
                 <li>
-                    <Link to='projects' smooth={true} duration={500}>
+                    <Link to='projects' smooth={true} duration={1500}>
                         Projects
+                    </Link>    
+                </li>
+                <li>
+                    <Link to='contact' smooth={true} duration={1500}>
+                        Contact
                     </Link>    
                 </li>
             </ul>
@@ -50,33 +52,28 @@ const NavBar = (props) => {
                 <div className={isOpenSidebar ? styles.sidebarIconHide : styles.sidebarIcon}>
                     <img src={sidebar} alt="" onClick={openNav}/>
                 </div>
-                <ul className={styles.sidebarLinks} 
-                    style={{
-                        width: isOpenSidebar ? '40%' : '0',
-                        display: isOpenSidebar ? 'flex' : 'none',
-                        transition: isOpenSidebar ? '0.5s' : '0s'
-                }}>
+                <ul className={styles.sidebarLinks} show={isOpenSidebar ? 'show' : 'hide'}>
                     <li onClick={closeNav}>
                         <img src={sidebar} alt="" />
                     </li>
                     <li>
-                        <Link to='home' smooth={true} duration={500}>
-                            Home
-                        </Link>    
-                    </li>
-                    <li>
-                        <Link to='about' smooth={true} duration={500}>
+                        <Link onClick={closeNav} to='about' smooth={true} duration={1500} className={styles.link}>
                             About
                         </Link>    
                     </li>
                     <li>
-                        <Link to='skills' smooth={true} duration={500}>
+                        <Link onClick={closeNav} to='skills' smooth={true} duration={1500} className={styles.link}>
                             Skills
                         </Link>    
                     </li>
                     <li>
-                        <Link to='projects' smooth={true} duration={500}>
+                        <Link onClick={closeNav} to='projects' smooth={true} duration={1500} className={styles.link}>
                             Projects
+                        </Link>    
+                    </li>
+                    <li>
+                        <Link onClick={closeNav} to='contact' smooth={true} duration={1500} className={styles.link}>
+                            Contact
                         </Link>    
                     </li>
                 </ul>

@@ -1,28 +1,28 @@
 import React from "react";
 import styles from './Projects.module.css'
 import ProjectCard from "./ProjectCard";
+import { Fade } from "react-reveal";
 
 const Projects = () => {
     return (
         <div className={styles.projects} id="projects">
-            <h1>My Projects</h1>
+            <Fade left>
+                <div className={styles.header}>
+                    <h1>My Projects</h1>
+                </div>
+            </Fade>
             <div className={styles.container}>
                 <ProjectCard 
-                    title={'Library'} 
-                    img={'./ProjectImages/Library.png'}
-                    description={'A simple library website to keep track of what you are reading'} 
-                    tools={'HTML, CSS, JavaScript'}
-                    demo={'https://andrewjanong.github.io/library/'}
-                    code={'https://github.com/AndrewJanong/library'}
-                />
-
-                <ProjectCard 
-                    title={'Hangman'} 
-                    img={'./ProjectImages/Hangman.png'}
-                    description={'A hangman game where you have to guess the programming language. 6 strikes and you\'re out!'} 
-                    tools={'React, HTML, CSS, JavaScript'}
-                    demo={'https://andrewjanong.github.io/hangman/'}
-                    code={'https://github.com/AndrewJanong/hangman'}
+                    title={'Sportify'} 
+                    img={'./ProjectImages/Sportify.png'}
+                    subtitle={'Sports Social Media Website'}
+                    description={
+                        `Sportify is a social media website focused on sports that simplifies the process of arranging a sports meetup and discuss topics related to sports.
+                        Users can add others as a friend, create groups, and chat with each other through groups or meetups, making Sportify a nice platform to connect sports enthusiasts.`                        
+                    } 
+                    tools={['ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB']}
+                    demo={'https://sportify-frontend-two.vercel.app/'}
+                    code={'https://github.com/AndrewJanong/Sportify'}
                 />
             </div>
         </div>

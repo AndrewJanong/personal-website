@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #071a33;
+    background-color: var(--nav-background);
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -15,6 +15,7 @@
     font-weight: bolder;
     font-size: 24px;
     color: white;
+    cursor: pointer;
 }
 
 .nav-links {
@@ -29,9 +30,11 @@
 }
 
 .nav-links > li {
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: bold;
     color: #fff;
+    position: relative;
+    transition: color 0.3s ease, font-size 0.3s ease;
     height: 100%;
     width: 15%;
     overflow: hidden;
@@ -40,9 +43,28 @@
     justify-content: center;
 }
 
+.nav-links > li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: var(--main-blue);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+  
+.nav-links > li:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
 .nav-links > li:hover {
-    color: #3282B8;
-    border-bottom: 1px solid #3282B8;
+    color: var(--main-blue);
+    font-size: 0.8rem;
     cursor: pointer;
 }
 
@@ -92,40 +114,53 @@
     }
 
     .sidebarLinks {
-        position: fixed;
-        right: 0;
-        top: 0;
-        color: #fff;
         width: 0;
-        height: 100%;
-        background-color: #071a33;
+        transition: width 0.5s ease;
+    }
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .sidebarLinks[show='hide'] * {
         display: none;
     }
 
-    .sidebarLinksOpen {
+    .sidebarLinks[show='show'] {
         position: fixed;
         right: 0;
         top: 0;
         color: #fff;
-        width: 40%;
+        width: 100%;
+        max-width: 480px;
         height: 100%;
         background-color: #071a33;
 
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        transition: 0.5s;
     }
 
-    .sidebarLinks li, .sidebarLinksOpen li {
+    .sidebarLinks li{
         width: 100%;
         height: 56px;
         border-bottom: 1px solid #0B2447;
+        font-size: 2rem;
+        list-style-type: none;
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .sidebar ul {
+        padding: 0;
     }
 
     .sidebarLinks li:hover, .sidebarLinksOpen li:hover {

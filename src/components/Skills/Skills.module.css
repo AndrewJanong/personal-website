@@ -1,41 +1,40 @@
 
 
 .skills {
+    height: 100vh;
     width: 100%;
+    /* background-color: var(--background); */
+    background-color: #000;
     position: relative;
-    padding: 4.8rem;
-    background-color: transparent;
+    padding: 6rem 8rem;
     color: white;
 }
 
-.skills h1 {
-    font-weight: bolder;
-    font-size: 64px;
-    margin-bottom: 48px;
+.header {
+    margin-bottom: 2rem;
 }
 
-.container {
-    height: 80%;
+.header h1 {
+    color: var(--very-bright-blue);
+}
+
+.container > * {
+    margin-top: 1rem;
+}
+
+.languages > p, .frameworks > p {
+    font-size: 1.25rem;
+    color: var(--light-blue);
+}
+
+.icons-container {
+    margin-top: 1rem;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 900px) {
-    .skills h1 {
-        font-weight: bolder;
-        font-size: 36px;
-        margin-bottom: 48px;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .container > * {
-        margin-bottom: 24px;
-        width: 80%;
+@media only screen and (max-width: 576px) {
+    .skills {
+        padding: 6rem 2rem;
     }
 }
