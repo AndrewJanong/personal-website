@@ -22,7 +22,7 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 50%;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -30,13 +30,13 @@
 }
 
 .nav-links > li {
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #fff;
     position: relative;
     transition: color 0.3s ease, font-size 0.3s ease;
     height: 100%;
-    width: 15%;
+    width: 100px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@
 
 .nav-links > li:hover {
     color: var(--main-blue);
-    font-size: 0.8rem;
+    font-size: 1.05rem;
     cursor: pointer;
 }
 
