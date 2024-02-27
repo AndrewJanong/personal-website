@@ -16,7 +16,7 @@ const About = () => {
                     <div className={`${styles["about-text"]}`}>
                         <p>
                             Hi there! I'm Andrew and I love solving challenging problems, especially related to Computer Science and Math!
-                            Currently, I'm a second-year student at <span>NUS</span> pursuing a degree in <span>Computer Science</span> with a second major in <span>Quantitative Finance</span>.
+                            Currently, I'm a second-year student at <span>NUS</span> pursuing a degree in <span>Computer Science</span> with a second major in <span>Mathematics</span>.
                         </p>
                         <p>
                             In the last few years, I have learnt multiple programming languages and made some personal projects.
