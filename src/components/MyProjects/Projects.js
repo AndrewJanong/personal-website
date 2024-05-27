@@ -33,7 +33,7 @@ const Projects = () => {
                         `PINUS Study is a website built for Indonesian students at NUS to discuss and give feedback to NUS modules. `
                     }
                     tools={['ReactJS', 'Typescript', 'Golang', 'SQL']}
-                    demo={'https://pinus-study.netlify.app/'}
+                    demo={'https://www.pinusstudy.com/'}
                     code={'https://github.com/orgs/PINUSTECH-2022/repositories'}
                 />
 
@@ -48,7 +48,7 @@ const Projects = () => {
                     }
                     tools={['Java, JavaFX']}
                     demo={'https://ay2324s1-cs2103t-w16-1.github.io/tp/'}
-                    code={'https://github.com/AY2324S1-CS2103T-W16-1/tp'}
+                    code={'https://github.com/AY2324S1-CS2103T-W16-1/tp '}
                 />
             </div>
         </div>
