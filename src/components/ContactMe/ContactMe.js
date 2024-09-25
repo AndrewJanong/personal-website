@@ -8,10 +8,10 @@ const ContactMe = () => {
             <Fade>
                 <h1>Let's Get In Touch!</h1>
                 <p>
-                    I'm currently looking for a Software Engineering Internship from May to August 2024.
+                    I'm currently looking for an Internship anytime from January to August 2025.
                     If you believe that I would enhance your team or if you'd like to have a conversation, please don't hesitate to reach out to me!
                 </p>
-                <a href="mailto: andrew.janong@u.nus.edu">
+                <a href="mailto: andrewjanong@gmail.com">
                     <button className={`${styles["contact-button"]}`}>
                         Contact Me
                     </button>
